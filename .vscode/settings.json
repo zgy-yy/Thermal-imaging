@@ -13,5 +13,7 @@
     "--background-index",
     "--query-driver=**",
     "--compile-commands-dir=c:\\Users\\tal-win\\Thermal-imaging\\build"
-  ]
+  ],
+  "idf.flashType": "JTAG",
+  "idf.portWin": "COM3"
 }

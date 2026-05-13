@@ -13,6 +13,8 @@
 *.bak
 *.tmp
 
+.cache/
+
 # Log files
 *.log
 
