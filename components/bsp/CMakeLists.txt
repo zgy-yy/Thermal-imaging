@@ -1,7 +1,7 @@
-set(src_dirs Usart/uart_comm.c)
-set(include_dirs Usart)
+set(src_dirs Usart/uart_comm.c Spi/spi_comm.c)
+set(include_dirs Usart Spi)
 
-set(requireds esp_driver_uart)
+set(requireds esp_driver_uart esp_driver_spi)
 
 idf_component_register(SRCS ${src_dirs}
                        INCLUDE_DIRS ${include_dirs}
