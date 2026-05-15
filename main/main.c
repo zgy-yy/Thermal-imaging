@@ -1,14 +1,12 @@
-#include <stdio.h>
-#include "freertos/FreeRTOS.h"
+﻿#include "esp_log.h"
+#include "esp_err.h"
 
+#include "uvc_host_reader.h"
 
-
+static const char *TAG = "main";
 
 void app_main(void)
 {
-    printf("hello\n");
-    while (true) {
-        printf("hello\n");
-        vTaskDelay(pdMS_TO_TICKS(1000));
-    }
+    ESP_ERROR_CHECK(uvc_host_reader_start());
+    ESP_LOGI(TAG, "UVC reader started");
 }
