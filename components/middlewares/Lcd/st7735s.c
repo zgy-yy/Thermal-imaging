@@ -91,7 +91,7 @@ static esp_err_t gpio_out_init(gpio_num_t pin)
     return gpio_config(&io);
 }
 
-esp_err_t ST7735S_Init(const st7735s_cfg_t *cfg)
+esp_err_t ST7735S_Init(const St7735s_cfg_t *cfg)
 {
     if (cfg == NULL) {
         return ESP_ERR_INVALID_ARG;

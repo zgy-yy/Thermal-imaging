@@ -15,4 +15,4 @@ dependencies:
   #   # All dependencies of `main` are public by default.
   #   public: true
   lvgl/lvgl: ^9.5.0
-  espressif/usb_host_uvc: ^2.5.0
+  espressif/usb_stream: ^1.5.0

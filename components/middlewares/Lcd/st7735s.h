@@ -25,10 +25,10 @@ typedef struct {
     gpio_num_t rst;
     gpio_num_t blk; /* 不用背光控制填 GPIO_NUM_NC */
     uint32_t spi_clock_hz; /* 典型 10M~20M，ST7735 可先用 10MHz */
-} st7735s_cfg_t;
+} St7735s_cfg_t;
 
 /** 初始化 GPIO + SPI（调用 spi_comm_init）并下发 ST7735 寄存器序列 */
-esp_err_t ST7735S_Init(const st7735s_cfg_t *cfg);
+esp_err_t ST7735S_Init(const St7735s_cfg_t *cfg);
 
 void ST7735S_SetAddressWindow(uint16_t x, uint16_t y, uint16_t w, uint16_t h);
 void ST7735S_DrawPixel(uint16_t x, uint16_t y, uint16_t color);
